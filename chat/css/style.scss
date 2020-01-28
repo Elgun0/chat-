@@ -1,0 +1,94 @@
+body{
+    background: url(../photo/6-66200_chat-wallpaper-hd-iphone-wallpaper.jpg);
+}
+#mini-chat{
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    background-color: green;
+    border-radius: 8px 8px 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+    cursor: pointer;
+}
+#chat{
+    width: 360px;
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+    border: 1px solid green;
+    border-radius: 8px 8px 0 0;
+    &.active{
+        display: none;
+    }
+    header{
+        padding: 10px;
+        border-radius: 8px 8px 0 0;
+        background: green;
+        color: #fff;
+        .head-info{
+            display: flex;
+            justify-content: space-between;
+            i{
+                margin-left: 5px;
+                cursor: pointer;
+            }
+        }
+        .head-content{
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+    }
+    main{
+        height: 300px;
+        padding: 20px;
+        background-color: #fff;
+        overflow-y: scroll;
+        .message{
+            max-width: 80%;
+            min-width: 51%;
+            padding: 10px;
+            margin-bottom: 30px;
+            &.support{
+                float: left;
+                position: relative;
+                background-color: green;
+                border-radius: 10px;
+                color: #fff;
+            }
+            .time{
+                position: absolute;
+                top: 100%;
+                right: 15px;
+                color: #000;
+            }
+            &.user{
+                float: right;
+                position: relative;
+                background-color: rgb(167, 167, 167);
+                border-radius: 10px;
+                color: #fff;
+            }
+        }
+    }
+    footer{
+        position: relative;
+        background-color: #fff;
+        .foot-icon{
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            i{
+                transition: .2s;
+                &:hover{
+                    color: green;
+                }
+            }
+        }
+        .form-control{
+            border-radius: 0;
+        }
+    }
+}

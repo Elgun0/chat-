@@ -1,0 +1,117 @@
+body {
+  background: url(../photo/6-66200_chat-wallpaper-hd-iphone-wallpaper.jpg);
+}
+
+#mini-chat {
+  width: 200px;
+  padding: 10px;
+  color: #fff;
+  background-color: green;
+  border-radius: 8px 8px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 60px;
+  cursor: pointer;
+}
+
+#chat {
+  width: 360px;
+  position: fixed;
+  bottom: 0;
+  right: 60px;
+  border: 1px solid green;
+  border-radius: 8px 8px 0 0;
+}
+
+#chat.active {
+  display: none;
+}
+
+#chat header {
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  background: green;
+  color: #fff;
+}
+
+#chat header .head-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#chat header .head-info i {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#chat header .head-content {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+#chat main {
+  height: 300px;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+#chat main .message {
+  max-width: 80%;
+  min-width: 51%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#chat main .message.support {
+  float: left;
+  position: relative;
+  background-color: green;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#chat main .message .time {
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  color: #000;
+}
+
+#chat main .message.user {
+  float: right;
+  position: relative;
+  background-color: #a7a7a7;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#chat footer {
+  position: relative;
+  background-color: #fff;
+}
+
+#chat footer .foot-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+#chat footer .foot-icon i {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#chat footer .foot-icon i:hover {
+  color: green;
+}
+
+#chat footer .form-control {
+  border-radius: 0;
+}
+/*# sourceMappingURL=style.css.map */
